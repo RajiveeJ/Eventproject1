@@ -42,9 +42,28 @@ div.stars {
       margin: 10px;
   }
 
+  @media (max-width:500px){
   body{
     background-image:linear-gradient(rgb(244, 214, 234),rgb(170, 233, 170),rgb(175, 217, 240));
   }
+  }
 
+  @media (min-width:10001px){
+    body{
+      background-image:linear-gradient(rgb(244, 214, 234),rgb(170, 233, 170),rgb(175, 217, 240));
+    }
+    }
+
+    @media (min-width:501px) and (max-width:800px){
+      body{
+        background-image:linear-gradient(rgb(244, 214, 234),rgb(170, 233, 170),rgb(175, 217, 240));
+      }
+      }
+
+      @media (min-width:801px) and (max-width:10000px){
+        body{
+          background-image:linear-gradient(rgb(244, 214, 234),rgb(170, 233, 170),rgb(175, 217, 240));
+        }
+        }
 
   
