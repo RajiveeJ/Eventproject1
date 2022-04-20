@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Survey-Form</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="divTableRow">
+            <div class="divTableCell"><b>Name</b><span class="required-field"></span></div>
+            <div class="divTableCell"><input type="text"  id="fname" name="fname" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname" required>
+            <br><small>First&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Last</small></div>
+         </div>
+         <br>
+         <div class="divTableRow">
+            <div class="divTableCell"><b>Email</b><span class="required-field"></span></div>
+            <div class="divTableCell" cellspacing="2px"><input type="email" id="email" required>
+           </div>
+         </div>
+         <br>
+         <div class="divTableRow">
+            <div class="divTableCell"><b>Your Experience</b><span class="required-field"></span></div>
+            <div class="stars">
+                <form action="" required>
+                  <input class="star star-5" id="star-5" type="radio" name="star"/>
+                  <label class="star star-5" for="star-5"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star"/>
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star"/>
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star"/>
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-1" id="star-1" type="radio" name="star"/>
+                  <label class="star star-1" for="star-1"></label>
+                </form>
+              </div>
+           </div>
+           <small>Overall, how would you rate your experience with us?</small>
+           <br><br>
+         <div class="divTableRow">
+            <div class="divTableCell"><b>How satisfied are you with</b><span class="required-field"></span></div>
+            <table class="table table table-striped text-center" required>
+                <tr>
+                    <td></td>
+                    <td>Very Unsatisfied</td>
+                    <td>Unsatisfied</td>
+                    <td>Neutral</td>
+                    <td>Satisfied</td>
+                    <td>Very Satisfied</td>
+                </tr>
+                <tr>
+                    <td>Purchase</td>
+                    <td><input type="radio" id="vu" name="satisfy"></td>
+                    <td><input type="radio" id="u" name="satisfy"></td>
+                    <td><input type="radio" id="n" name="satisfy"></td>
+                    <td><input type="radio" id="s" name="satisfy"></td>
+                    <td><input type="radio" id="vs" name="satisfy"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" id="vu" name="satisfy1"></td>
+                    <td><input type="radio" id="u" name="satisfy1"></td>
+                    <td><input type="radio" id="n" name="satisfy1"></td>
+                    <td><input type="radio" id="s" name="satisfy1"></td>
+                    <td><input type="radio" id="vs" name="satisfy1"></td>
+                </tr>
+                <tr>
+                    <td>Company Overall</td>
+                    <td><input type="radio" id="vu" name="satisfy2"></td>
+                    <td><input type="radio" id="u" name="satisfy2"></td>
+                    <td><input type="radio" id="n" name="satisfy2"></td>
+                    <td><input type="radio" id="s" name="satisfy2"></td>
+                    <td><input type="radio" id="vs" name="satisfy2"></td>
+                </tr>
+            </table>
+           </div>
+           <br><br>
+         <div class="divTableRow">
+            <div class="divTableCell"><b>How likely are you to</b><span class="required-field"></span></div>
+            <table class="table table table-striped text-center" style="flex-wrap: wrap;" required>
+                <tr>
+                    <td></td>
+                    <td>Very Unlikely</td>
+                    <td>Unlikely</td>
+                    <td>Neutral</td>
+                    <td>Likely</td>
+                    <td>Very Likely</td>
+                </tr>
+                <tr>
+                    <td>Buy from us again</td>
+                    <td><input type="radio" id="like1" name="like"></td>
+                    <td><input type="radio" id="like2" name="like"></td>
+                    <td><input type="radio" id="like3" name="like"></td>
+                    <td><input type="radio" id="like4" name="like"></td>
+                    <td><input type="radio" id="like5" name="like"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our product to others</td>
+                    <td><input type="radio" id="like1" name="like1"></td>
+                    <td><input type="radio" id="like2" name="like1"></td>
+                    <td><input type="radio" id="like3" name="like1"></td>
+                    <td><input type="radio" id="like4" name="like1"></td>
+                    <td><input type="radio" id="like5" name="like1"></td>
+                </tr>
+                <tr>
+                    <td>Recommend our company to others</td>
+                    <td><input type="radio" id="like1" name="like2"></td>
+                    <td><input type="radio" id="like2" name="like2"></td>
+                    <td><input type="radio" id="like3" name="like2"></td>
+                    <td><input type="radio" id="like4" name="like2"></td>
+                    <td><input type="radio" id="like5" name="like2"></td>
+                </tr>
+            </table>
+           </div>
+           <br><br>
+         <div class="divTableRow">
+            <div class="divTableCell"><b>Additional comments or suggestions</b></div>
+            <textarea></textarea>
+           
+         
+         </div>
+         <br>
+         <div class="divTableRow">
+
+            <div class="divTableCell" cellspacing="2px"><input type="submit" id="submit" value="Submit" class="btn btn-primary" onclick="ValidationEvent()">
+           </div>
+         </div>
+         </div>
+
+         
+         </div>
+         
+    </div>
+    
+</body>
+</html>

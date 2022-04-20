@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    
+    <title>Booking</title>
+</head>
+<body>
+    <div class="container my-4" style="background-color: #563bef" >
+        <h1 class="text-center text-white">Booking Details</h1> 
+      </div>
+
+      <div class="container text-center ">
+        
+          <div>
+            
+              <div
+        
+                style="background-color: #a5adad"
+              >
+              <b>Event 8</b>   
+                <br>
+              <small> Number of seats available : 23</small> 
+              </div>
+              
+                <br>
+              <center>   <div
+                    style="width: 100px; height: 150px; background-color: #c7aaaa"
+                >
+     <img src="./img/conf.jpg" alt="event-photo" /> 
+                    
+                  </div></center>
+               <br><br>
+                <div >
+                  <p>Name: &nbsp; <input type="text" id="name"></p>
+                  <p>Email: &nbsp; <input type="email" id="email"></p>
+                  <p>Phone:  <input type="text" id="phone"></p>
+                  <p>Number of seats: &nbsp; 
+                      <select id="seats">
+                
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                             </select>
+                  </p>
+                  <div id="ch">Name of attendees :</div>
+                  <br>
+                  <button
+                    class="btn btn-primary"
+                    style="background-color: #db19a1"
+                    onclick="ValidationEvent();"
+                  >
+                    Book 
+                  </button>
+                </div>
+              </div>
+            </div>
+          
+       
+    <script src="script1.js">
+   
+    </script>
+    
+</body>
+</html>
